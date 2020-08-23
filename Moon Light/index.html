@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moon Light</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <h1 class="pmoon"> A moonlit night is very much charming. We can find a clear picture in our mind’s eye in the moonlit night. On a moonlit night, nature bears a very beautiful scene. It is of the full moon in a clear sky. It is dreamy for its beauty. It seems that the plants and the trees are bathing flood of light. The flowers look like pearls. It caws and we make the same mistake. Generally, people find much pleasure to go out and enjoy the beauty of nature. The moon wears a magic spell. The surface of the river looks like a sheet of liquid silver. The water of the river seems to be dancing in joy. At that time the people go out to enjoy the night on the riverside. They also go out in the open fields and woods to have the view. It even dazzles nature too. The poets are happy over the night. They get food for their pets.</h1>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+</html>
