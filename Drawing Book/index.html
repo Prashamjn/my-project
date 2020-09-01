@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass Scratch Out Effect</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="scratch"></div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="wScratchPad.min.js"></script>
+
+    <script type="text/javascript">
+        $('#scratch').wScratchPad({
+            size        : 50,          // The size of the brush/scratch.
+            bg          : '#f00',  // Background (image path or hex color).
+            fg          : '#000',  // Foreground (image path or hex color).
+        });
+    </script>
+</body>
+</html>
